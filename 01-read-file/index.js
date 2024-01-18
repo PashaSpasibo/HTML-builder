@@ -5,6 +5,5 @@
  
  stream.on('readable', () => {
     const data = stream.read();
-    console.log(data);
+    if (data !== null) console.log(data);
  });
- 
